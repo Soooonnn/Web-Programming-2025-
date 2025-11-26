@@ -7,16 +7,18 @@
 <body>
   <h1>클라이언트-서버 요청 실습</h1>
 
-  <h2>1. GET 요청 (검색)</h2>
+  <h2>1. GET 요청 (제출)</h2>
   <form action="/search" method="get">
-    <input type="text" name="q" placeholder="검색어 입력">
-    <button>검색</button>
+    값 1: <input type="text" name="value1" placeholder="예: 사과"><br>
+    값 2: <input type="text" name="value2" placeholder="예: 바나나"><br>
+    <button>제출</button>
   </form>
 
-  <h2>2. POST 요청 (댓글 작성)</h2>
-  <form action="/submit" method="post">
-    <textarea name="text" rows="4" cols="40" placeholder="서버로 보낼 내용"></textarea><br>
-    <button>POST 요청 보내기</button>
-  </form>
+<h2>2. POST 요청 (댓글 작성)</h2>
+<form action="/submit-form" method="post">
+  숫자 1: <input type="number" name="value1"><br>
+  숫자 2: <input type="number" name="value2"><br>
+  <button>POST 요청 보내기</button>
+</form>
 </body>
 </html>
